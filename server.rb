@@ -1,5 +1,8 @@
 require 'sinatra'
 
+# set :environment, :production
+set :environment, :development
+
 get '/' do
   erb :index
 end

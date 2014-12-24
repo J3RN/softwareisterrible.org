@@ -12,6 +12,20 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
 .huge {
   float: left;
   display: block;
@@ -143,13 +157,22 @@ html {
   margin-left: 25.58941%; }
   .centered-6:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 850px) {
+    .centered-6 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%;
+      margin-left: 12.79471%; }
+      .centered-6:last-child {
+        margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .centered-6 {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%;
-      margin-left: 0%; }
+      width: 91.4702%;
+      margin-left: 4.2649%; }
       .centered-6:last-child {
         margin-right: 0; } }
 
@@ -265,4 +288,53 @@ html {
       .third-fixed:last-child {
         margin-right: 0; } }
 
-/*# sourceMappingURL=sass_style.css.map */
+@font-face {
+  font-family: Lato-Black;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Lato/Lato-Black.eot");
+  src: url("../fonts/Lato/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Black.woff") format("woff"), url("../fonts/Lato/Lato-Black.ttf") format("truetype"), url("../fonts/Lato/Lato-Black.svg#Lato-Black") format("svg"); }
+@font-face {
+  font-family: Lato-light;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Lato/Lato-Light.eot");
+  src: url("../fonts/Lato/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Light.woff") format("woff"), url("../fonts/Lato/Lato-Light.ttf") format("truetype"), url("../fonts/Lato/Lato-Light.svg#Lato-light") format("svg"); }
+@font-face {
+  font-family: Lato;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Lato/Lato-Regular.eot");
+  src: url("../fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Regular.woff") format("woff"), url("../fonts/Lato/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato/Lato-Regular.svg#Lato") format("svg"); }
+.bold {
+  font-family: Lato-Black; }
+
+.light {
+  font-family: Lato-Light; }
+
+.lato {
+  font-family: Lato; }
+
+header {
+  height: 125px;
+  background: url("../images/lodyas.png"); }
+
+.title-header, .menu > h2 {
+  margin-top: 0; }
+
+.secondary {
+  color: #fc04ff; }
+
+.title {
+  color: white; }
+
+.menu {
+  color: white;
+  text-align: right; }
+  .menu a {
+    color: white;
+    text-decoration: none; }
+    .menu a:hover {
+      color: #fc04ff; }
+
+/*# sourceMappingURL=main.css.map */
