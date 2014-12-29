@@ -1,11 +1,56 @@
 header {
-	height: 125px;
-	background: url('../images/lodyas.png');
-	
+	background: url('../images/shattered.png');
+	background-size: 150px;
+}
+
+body {
+	margin: 0;
+}
+
+.head {
+	margin-top: 10px;
+	height: 100px;
+
+	@include span-columns(10);
+	@include shift(1);
+
+	-o-transition:0.33s;
+	-ms-transition:0.33s;
+	-moz-transition:0.33s;
+	-webkit-transition:0.33s;
+
+
+	@include media($little-screen) {
+		@include span-columns(10);
+		@include shift(1);
+		height: 130px;
+	}
+
+	@include media($mobile) {
+		@include span-columns(11);
+		@include shift(0.5);	
+		height: 130px;
+	}
+}
+
+.filter {
+	background-color: $secondary;
+	color: $white;
+	text-align: center;
+	font-size: 10pt;
 }
 
 .title-header, .menu > h2 {
 	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.title-header {
+	font-size: 24pt;
+}
+
+.subtitle {
+	margin-top: 10px;
 }
 
 .secondary {
@@ -13,19 +58,66 @@ header {
 }
 
 .title {
-	color: white;
+	@include span-columns(5 of 10);
+	color: $black;
+
+	@include media($little-screen) {
+		@include span-columns(11 of 11);
+		text-align: center;
+	}
 }
 
 .menu {
-	color: white;
+	@include span-columns(5 of 10);
+	color: $black;
 	text-align: right;
+	
+
+
 	a {
-		color: white;
+		@include transition(all 0.33s);
+		color: $black;
 		text-decoration: none;
+		font-size: 14pt;
 
 		&:hover {
 			color: $secondary;
 		}
 	}
 
+	@include media($little-screen) {
+		@include span-columns(11 of 11);
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
 }
+
+.text-container {
+	
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 480px;
+	
+	@include transition(all 0.33s);
+
+	@include media(new-breakpoint(max-width 500px)) {
+		@include span-columns(11);
+		@include shift(0.5);
+	}
+}
+
+.text-input {
+	width: 100%;
+	height: 120px;
+	font-size: 18pt;
+	resize: none;
+	border-color: $black;
+	border-radius: 5px;
+
+	&:focus {
+		outline: none;
+		border-color: $secondary;
+	}
+}
+

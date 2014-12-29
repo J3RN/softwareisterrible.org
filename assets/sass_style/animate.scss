@@ -1,0 +1,10 @@
+.secondary-animate {
+	-webkit-transition: color 0.5s ease-out;
+	-moz-transition: color 0.5s ease-out;
+	-o-transition: color 0.5s ease-out;
+	transition: color 0.5s ease-out;
+	&:hover {
+		color: $secondary;
+		cursor: pointer;
+	}
+}

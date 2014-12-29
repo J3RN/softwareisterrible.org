@@ -2,8 +2,7 @@
 @import "neat/neat";
 
 $mobile: new-breakpoint(max-width 480px);
-$little-screen: new-breakpoint(max-width 850px);
-$big-screen: new-breakpoint(min-width 850px);
+$little-screen: new-breakpoint(max-width 900px);
 
 .huge {
 	@include span-columns(12);
@@ -120,6 +119,20 @@ $big-screen: new-breakpoint(min-width 850px);
 
 .half {
 	@include span-columns(6);
+	margin: 0;
+	@include media($mobile) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+}
+
+
+.third {
+	@include span-columns(4);
+	
+	@include media($little-screen) {
+		@include span-columns(6);
+	}
 
 	@include media($mobile) {
 		@include span-columns(10);
@@ -127,14 +140,16 @@ $big-screen: new-breakpoint(min-width 850px);
 	}
 }
 
-.third {
+.third-shift {
 	@include span-columns(4);
+	@include shift(2);
 
 	@include media($little-screen) {
 		@include span-columns(6);
+		@include shift(0);
 	}
 
-	@include media($big-screen) {
+	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
 	}
@@ -146,4 +161,8 @@ $big-screen: new-breakpoint(min-width 850px);
 	@include media($mobile) {
 		@include span-columns(12);
 	}
+}
+
+.omega {
+	@include omega();
 }

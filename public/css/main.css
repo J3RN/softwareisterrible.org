@@ -157,7 +157,7 @@ html {
   margin-left: 25.58941%; }
   .centered-6:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 900px) {
     .centered-6 {
       float: left;
       display: block;
@@ -234,7 +234,8 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 48.82117%;
+  margin: 0; }
   .half:last-child {
     margin-right: 0; }
   @media screen and (max-width: 480px) {
@@ -254,7 +255,7 @@ html {
   width: 31.76157%; }
   .third:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 900px) {
     .third {
       float: left;
       display: block;
@@ -262,7 +263,7 @@ html {
       width: 48.82117%; }
       .third:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 850px) {
+  @media screen and (max-width: 480px) {
     .third {
       float: left;
       display: block;
@@ -270,6 +271,33 @@ html {
       width: 82.94039%;
       margin-left: 8.5298%; }
       .third:last-child {
+        margin-right: 0; } }
+
+.third-shift {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 17.05961%; }
+  .third-shift:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 900px) {
+    .third-shift {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 0%; }
+      .third-shift:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .third-shift {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .third-shift:last-child {
         margin-right: 0; } }
 
 .third-fixed {
@@ -287,6 +315,9 @@ html {
       width: 100%; }
       .third-fixed:last-child {
         margin-right: 0; } }
+
+.omega {
+  margin-right: 0; }
 
 @font-face {
   font-family: Lato-Black;
@@ -316,25 +347,148 @@ html {
   font-family: Lato; }
 
 header {
-  height: 125px;
-  background: url("../images/lodyas.png"); }
+  background: url("../images/shattered.png");
+  background-size: 150px; }
+
+body {
+  margin: 0; }
+
+.head {
+  margin-top: 10px;
+  height: 100px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  -o-transition: 0.33s;
+  -ms-transition: 0.33s;
+  -moz-transition: 0.33s;
+  -webkit-transition: 0.33s; }
+  .head:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 900px) {
+    .head {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%;
+      height: 130px; }
+      .head:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .head {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 4.2649%;
+      height: 130px; }
+      .head:last-child {
+        margin-right: 0; } }
+
+.filter {
+  background-color: #fc04ff;
+  color: white;
+  text-align: center;
+  font-size: 10pt; }
 
 .title-header, .menu > h2 {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.title-header {
+  font-size: 24pt; }
+
+.subtitle {
+  margin-top: 10px; }
 
 .secondary {
   color: #fc04ff; }
 
 .title {
-  color: white; }
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 48.57871%;
+  color: #262626; }
+  .title:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 900px) {
+    .title {
+      float: left;
+      display: block;
+      margin-right: 2.57751%;
+      width: 100%;
+      text-align: center; }
+      .title:last-child {
+        margin-right: 0; } }
 
 .menu {
-  color: white;
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 48.57871%;
+  color: #262626;
   text-align: right; }
+  .menu:last-child {
+    margin-right: 0; }
   .menu a {
-    color: white;
-    text-decoration: none; }
+    -webkit-transition: all 0.33s;
+    -moz-transition: all 0.33s;
+    transition: all 0.33s;
+    color: #262626;
+    text-decoration: none;
+    font-size: 14pt; }
     .menu a:hover {
       color: #fc04ff; }
+  @media screen and (max-width: 900px) {
+    .menu {
+      float: left;
+      display: block;
+      margin-right: 2.57751%;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px; }
+      .menu:last-child {
+        margin-right: 0; } }
+
+.text-container {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 480px;
+  -webkit-transition: all 0.33s;
+  -moz-transition: all 0.33s;
+  transition: all 0.33s; }
+  @media screen and (max-width: 500px) {
+    .text-container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 4.2649%; }
+      .text-container:last-child {
+        margin-right: 0; } }
+
+.text-input {
+  width: 100%;
+  height: 120px;
+  font-size: 18pt;
+  resize: none;
+  border-color: #262626;
+  border-radius: 5px; }
+  .text-input:focus {
+    outline: none;
+    border-color: #fc04ff; }
+
+.secondary-animate {
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; }
+  .secondary-animate:hover {
+    color: #fc04ff;
+    cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
